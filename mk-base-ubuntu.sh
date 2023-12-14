@@ -171,26 +171,26 @@ fi
 
 pip3 install python-periphery Adafruit-Blinka -i https://mirrors.aliyun.com/pypi/simple/
 
-HOST=lubancat
+HOST=bitiot-gateway
 
 # Create User
-useradd -G sudo -m -s /bin/bash cat
-passwd cat <<IEOF
+useradd -G sudo -m -s /bin/bash bit
+passwd bit <<IEOF
 temppwd
 temppwd
 IEOF
-gpasswd -a cat video
-gpasswd -a cat audio
+gpasswd -a bit video
+gpasswd -a bit audio
 passwd root <<IEOF
 root
 root
 IEOF
 
 # allow root login
-sed -i '/pam_securetty.so/s/^/# /g' /etc/pam.d/login
+# sed -i '/pam_securetty.so/s/^/# /g' /etc/pam.d/login
 
 # hostname
-echo lubancat > /etc/hostname
+echo bitiot-gateway > /etc/hostname
 
 # set localtime
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
