@@ -48,6 +48,7 @@ else
 fi
 
 TARGET_ROOTFS_DIR="binary"
+DISTRIBUTION_VERSION="focal"
 
 sudo rm -rf $TARGET_ROOTFS_DIR/
 
@@ -171,6 +172,20 @@ fi
 
 pip3 install python-periphery Adafruit-Blinka -i https://mirrors.aliyun.com/pypi/simple/
 
+# 安装 Docker
+echo -e "\033[47;36m Install Docker \033[0m"
+# 安装依赖包
+\${APT_INSTALL} ca-certificates curl gnupg
+# 添加 GPG 秘钥
+install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+# 设置 Docker Stable 存储库
+echo "deb [arch=$ARCH signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu $DISTRIBUTION_VERSION stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+chmod a+r /etc/apt/keyrings/docker.gpg
+# 开始安装
+apt-get -y update
+\${APT_INSTALL} docker-ce docker-ce-cli containerd.io
+
 HOST=bitiot-gateway
 
 # Create User
@@ -185,6 +200,9 @@ passwd root <<IEOF
 root
 root
 IEOF
+
+# 将 bit 加入到 docker 用户组
+usermod -aG docker bit
 
 # allow root login
 # sed -i '/pam_securetty.so/s/^/# /g' /etc/pam.d/login
