@@ -2,6 +2,7 @@
 
 # Directory contains the target rootfs
 TARGET_ROOTFS_DIR="binary"
+DISTRIBUTION_VERSION="focal"
 
 if [ ! $SOC ]; then
     echo "---------------------------------------------------------"
@@ -234,9 +235,10 @@ if [[ "$TARGET" == "gnome" ||  "$TARGET" == "xfce" || "$TARGET" == "gnome-full" 
     \${APT_INSTALL} cheese v4l-utils
     \${APT_INSTALL} /packages/libv4l/*.deb
 elif [ "$TARGET" == "lite" ]; then
-    echo -e "\033[47;36m ----- Install Camera ----- - \033[0m"
-    \${APT_INSTALL} v4l-utils
-    \${APT_INSTALL} /packages/mpp/*
+    # 用不到 Camera
+    # echo -e "\033[47;36m ----- Install Camera ----- - \033[0m"
+    # \${APT_INSTALL} v4l-utils
+    # \${APT_INSTALL} /packages/mpp/*
 fi
 
 if [[ "$TARGET" == "gnome" || "$TARGET" == "gnome-full" ]]; then
