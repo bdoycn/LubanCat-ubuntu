@@ -1,0 +1,422 @@
+{
+  "host": "http://host.docker.internal:5800",
+  "SSLVerify": false,
+  "security": {
+    "type": "anonymous"
+  },
+  "mapping": [
+    {
+      "url": "ai/5",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "ai_1_current",
+            "type": "double",
+            "value": "${current}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "ai/1",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "ai_2_current",
+            "type": "double",
+            "value": "${current}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "vi/6",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "vi_1_voltage",
+            "type": "double",
+            "value": "${voltage}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "vi/7",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "VI",
+        "telemetry": [
+          {
+            "key": "vi_2_voltage",
+            "type": "double",
+            "value": "${voltage}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "gpio/reverse/103",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 0.5,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "di_1_state",
+            "type": "int",
+            "value": "${state}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "gpio/reverse/97",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 0.5,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "di_2_state",
+            "type": "int",
+            "value": "${state}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "gpio/6",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 0.5,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "attributes": [
+          {
+            "key": "do_1_state",
+            "type": "int",
+            "value": "${state}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "gpio/5",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 0.5,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "attributes": [
+          {
+            "key": "do_2_state",
+            "type": "int",
+            "value": "${state}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "pt100?spi_device=/dev/spidev2.0&cs_pin=74&dry_pin=0",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "pt100_1_temperature",
+            "type": "double",
+            "value": "${temperature}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "pt100?spi_device=/dev/spidev2.1&cs_pin=73&dry_pin=16",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "pt100_2_temperature",
+            "type": "double",
+            "value": "${temperature}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "pt100?spi_device=/dev/spidev2.2&cs_pin=86&dry_pin=41",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "pt100_3_temperature",
+            "type": "double",
+            "value": "${temperature}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "pt100?spi_device=/dev/spidev2.3&cs_pin=85&dry_pin=148",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 1,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "telemetry": [
+          {
+            "key": "pt100_4_temperature",
+            "type": "double",
+            "value": "${temperature}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "pwm/settings/2",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 0.5,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "attributes": [
+          {
+            "key": "pwm_1_frequency",
+            "type": "int",
+            "value": "${frequency}"
+          },
+          {
+            "key": "pwm_1_duty_cycle",
+            "type": "double",
+            "value": "${duty_cycle}"
+          },
+          {
+            "key": "pwm_1_enable",
+            "type": "int",
+            "value": "${enabled}"
+          }
+        ]
+      }
+    },
+    {
+      "url": "pwm/settings/3",
+      "httpMethod": "GET",
+      "httpHeaders": {
+        "ACCEPT": "application/json"
+      },
+      "timeout": 1,
+      "scanPeriod": 0.5,
+      "converter": {
+        "type": "json",
+        "deviceNameJsonExpression": "Gateway_Device_1_R",
+        "deviceTypeJsonExpression": "Resource",
+        "attributes": [
+          {
+            "key": "pwm_2_frequency",
+            "type": "int",
+            "value": "${frequency}"
+          },
+          {
+            "key": "pwm_2_duty_cycle",
+            "type": "double",
+            "value": "${duty_cycle}"
+          },
+          {
+            "key": "pwm_2_enable",
+            "type": "int",
+            "value": "${enabled}"
+          }
+        ]
+      }
+    }
+  ],
+  "attributeUpdates": [
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "do_1_state",
+      "requestUrlExpression": "gpio/6",
+      "requestValueExpression": "{\"state\":${attributeValue}}"
+    },
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "do_2_state",
+      "requestUrlExpression": "gpio/5",
+      "requestValueExpression": "{\"state\":${attributeValue}}"
+    },
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "pwm_1_frequency",
+      "requestUrlExpression": "pwm/frequency/2",
+      "requestValueExpression": "{\"frequency\":${attributeValue}}"
+    },
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "pwm_1_duty_cycle",
+      "requestUrlExpression": "pwm/duty_cycle/2",
+      "requestValueExpression": "{\"duty_cycle\":${attributeValue}}"
+    },
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "pwm_1_enable",
+      "requestUrlExpression": "pwm/enable/2",
+      "requestValueExpression": "{\"enable\":${attributeValue}}"
+    },
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "pwm_2_frequency",
+      "requestUrlExpression": "pwm/frequency/3",
+      "requestValueExpression": "{\"frequency\":${attributeValue}}"
+    },
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "pwm_2_duty_cycle",
+      "requestUrlExpression": "pwm/duty_cycle/3",
+      "requestValueExpression": "{\"duty_cycle\":${attributeValue}}"
+    },
+    {
+      "httpMethod": "POST",
+      "httpHeaders": {
+        "CONTENT-TYPE": "application/json"
+      },
+      "timeout": 1,
+      "tries": 3,
+      "deviceNameFilter": "Gateway_Device_1_R",
+      "attributeFilter": "pwm_2_enable",
+      "requestUrlExpression": "pwm/enable/3",
+      "requestValueExpression": "{\"enable\":${attributeValue}}"
+    }
+  ],
+  "serverSideRpc": []
+}

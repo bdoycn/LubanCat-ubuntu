@@ -1,0 +1,1825 @@
+{
+  "logLevel": "NOTSET",
+  "master": {
+    "slaves": [
+       {
+        "type": "serial",
+        "method": "rtu",
+        "port": "/dev/ttyS4",
+        "baudrate": 115200,
+        "timeout": 35,
+        "stopbits": 1,
+        "bytesize": 8,
+        "byteOrder": "BIG",
+        "wordOrder": "BIG",
+        "retries": true,
+        "retryOnEmpty": true,
+        "retryOnInvalid": true,
+        "pollPeriod": 1000,
+        "unitId": 1,
+        "deviceName": "Gateway_Device_1_M",
+        "sendDataOnlyOnChange": false,
+        "connectAttemptTimeMs": 5000,
+        "connectAttemptCount": 5,
+        "waitAfterFailedAttemptsMs": 300000,
+        "attributes": [
+          {
+            "tag": "VMS_转速测量值（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1158
+          },
+          {
+            "tag": "VMS_传动比（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1159
+          },
+          {
+            "tag": "VMS_关注点1转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1160
+          },
+          {
+            "tag": "VMS_关注点2转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1161
+          },
+          {
+            "tag": "VMS_关注点3转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1162
+          },
+          {
+            "tag": "VMS_关注点4转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1163
+          },
+          {
+            "tag": "VMS_关注点5转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1164
+          },
+          {
+            "tag": "VMS_关注点6转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1165
+          },
+          {
+            "tag": "VMS_关注点7转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1166
+          },
+          {
+            "tag": "VMS_关注点8转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1167
+          },
+          {
+            "tag": "VMS_关注带1起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1168
+          },
+          {
+            "tag": "VMS_关注带1结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1169
+          },
+          {
+            "tag": "VMS_关注带2起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1170
+          },
+          {
+            "tag": "VMS_关注带2结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1171
+          },
+          {
+            "tag": "VMS_关注带3起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1172
+          },
+          {
+            "tag": "VMS_关注带3结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1173
+          },
+          {
+            "tag": "VMS_关注带4起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1174
+          },
+          {
+            "tag": "VMS_关注带4结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1175
+          },
+          {
+            "tag": "VMS_关注带5起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1176
+          },
+          {
+            "tag": "VMS_关注带5结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1177
+          },
+          {
+            "tag": "VMS_滚动体个数",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1178
+          },
+          {
+            "tag": "VMS_滚动体直径（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1179
+          },
+          {
+            "tag": "VMS_轴承节径（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1180
+          },
+          {
+            "tag": "VMS_α接触角（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1181
+          },
+          {
+            "tag": "VMS_叶片数/输入侧齿数",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1182
+          },
+          {
+            "tag": "VMS_诊断场景",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1183
+          },
+          {
+            "tag": "VMS_诊断类型",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1184
+          },
+          {
+            "tag": "VMS_X轴振动加速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1185
+          },
+          {
+            "tag": "VMS_X轴振动加速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1186
+          },
+          {
+            "tag": "VMS_Y轴振动加速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1187
+          },
+          {
+            "tag": "VMS_Y轴振动加速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1188
+          },
+          {
+            "tag": "VMS_Z轴振动加速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1189
+          },
+          {
+            "tag": "VMS_Z轴振动加速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1190
+          },
+          {
+            "tag": "VMS_X轴振动速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1191
+          },
+          {
+            "tag": "VMS_X轴振动速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1192
+          },
+          {
+            "tag": "VMS_Y轴振动速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1193
+          },
+          {
+            "tag": "VMS_Y轴振动速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1194
+          },
+          {
+            "tag": "VMS_Z轴振动速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1195
+          },
+          {
+            "tag": "VMS_Z轴振动速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1196
+          },
+          {
+            "tag": "VMS_温度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1197
+          },
+          {
+            "tag": "VMS_温度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1198
+          },
+          {
+            "tag": "VMS_X轴振动位移预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1199
+          },
+          {
+            "tag": "VMS_X轴振动位移报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1200
+          },
+          {
+            "tag": "VMS_Y轴振动位移预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1201
+          },
+          {
+            "tag": "VMS_Y轴振动位移报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1202
+          },
+          {
+            "tag": "VMS_Z轴振动位移预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1203
+          },
+          {
+            "tag": "VMS_Z轴振动位移报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 1204
+          },
+          {
+            "tag": "VMS_比特率",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 2001
+          },
+          {
+            "tag": "VMS_版本号",
+            "type": "16int",
+            "functionCode": 3,
+            "objectsCount": 1,
+            "address": 2005
+          }
+        ],
+        "timeseries": [
+          {
+            "tag": "VMS_温度实时值（扩大10倍，int16）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 0
+          },
+          {
+            "tag": "VMS_X轴速度均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1
+          },
+          {
+            "tag": "VMS_Y轴速度均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 2
+          },
+          {
+            "tag": "VMS_Z轴速度均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 3
+          },
+          {
+            "tag": "VMS_X轴位移均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 4
+          },
+          {
+            "tag": "VMS_Y轴位移均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 5
+          },
+          {
+            "tag": "VMS_Z轴位移均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 6
+          },
+          {
+            "tag": "VMS_X轴加速度均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 7
+          },
+          {
+            "tag": "VMS_Y轴加速度均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 8
+          },
+          {
+            "tag": "VMS_Z轴加速度均方根值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 9
+          },
+          {
+            "tag": "VMS_Z轴0.5倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 10
+          },
+          {
+            "tag": "VMS_Z轴1.0倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 11
+          },
+          {
+            "tag": "VMS_Z轴1.5倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 12
+          },
+          {
+            "tag": "VMS_Z轴2.0倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 13
+          },
+          {
+            "tag": "VMS_Z轴2.5倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 14
+          },
+          {
+            "tag": "VMS_Z轴3.0倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 15
+          },
+          {
+            "tag": "VMS_Z轴3.5倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 16
+          },
+          {
+            "tag": "VMS_Z轴4.0倍转速速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 17
+          },
+          {
+            "tag": "VMS_温度校准值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 80
+          },
+          {
+            "tag": "VMS_温度系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 92
+          },
+          {
+            "tag": "VMS_温度系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 94
+          },
+          {
+            "tag": "VMS_X轴速度系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 96
+          },
+          {
+            "tag": "VMS_X轴速度系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 98
+          },
+          {
+            "tag": "VMS_Y轴速度系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 100
+          },
+          {
+            "tag": "VMS_Y轴速度系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 102
+          },
+          {
+            "tag": "VMS_Z轴速度系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 104
+          },
+          {
+            "tag": "VMS_Z轴速度系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 106
+          },
+          {
+            "tag": "VMS_X轴位移系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 108
+          },
+          {
+            "tag": "VMS_X轴位移系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 110
+          },
+          {
+            "tag": "VMS_Y轴位移系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 112
+          },
+          {
+            "tag": "VMS_Y轴位移系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 114
+          },
+          {
+            "tag": "VMS_Z轴位移系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 116
+          },
+          {
+            "tag": "VMS_Z轴位移系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 118
+          },
+          {
+            "tag": "VMS_X轴加速度系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 120
+          },
+          {
+            "tag": "VMS_X轴加速度系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 122
+          },
+          {
+            "tag": "VMS_Y轴加速度系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 124
+          },
+          {
+            "tag": "VMS_Y轴加速度系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 126
+          },
+          {
+            "tag": "VMS_Z轴加速度系数A（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 128
+          },
+          {
+            "tag": "VMS_Z轴加速度系数B（float）",
+            "type": "32int",
+            "functionCode": 3,
+            "objectsCount": 2,
+            "address": 130
+          },
+          {
+            "tag": "VMS_X轴速度最大值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1000
+          },
+          {
+            "tag": "VMS_X轴速度峭度系数（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1001
+          },
+          {
+            "tag": "VMS_X轴加速度最大值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1002
+          },
+          {
+            "tag": "VMS_X轴加速度峭度系数（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1003
+          },
+          {
+            "tag": "VMS_Y轴速度最大值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1004
+          },
+          {
+            "tag": "VMS_Y轴速度峭度系数（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1005
+          },
+          {
+            "tag": "VMS_Y轴加速度最大值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1006
+          },
+          {
+            "tag": "VMS_Y轴加速度峭度系数（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1007
+          },
+          {
+            "tag": "VMS_Z轴速度最大值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1008
+          },
+          {
+            "tag": "VMS_Z轴速度峭度系数（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1009
+          },
+          {
+            "tag": "VMS_Z轴加速度最大值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1010
+          },
+          {
+            "tag": "VMS_Z轴加速度峭度系数（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1011
+          },
+          {
+            "tag": "VMS_通道ID--1（X轴）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1013
+          },
+          {
+            "tag": "VMS_测点转速（当前转速）（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1014
+          },
+          {
+            "tag": "VMS_内圈特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1015
+          },
+          {
+            "tag": "VMS_外圈特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1016
+          },
+          {
+            "tag": "VMS_滚动体特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1017
+          },
+          {
+            "tag": "VMS_保持架特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1018
+          },
+          {
+            "tag": "VMS_关注点1加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1019
+          },
+          {
+            "tag": "VMS_关注点2加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1020
+          },
+          {
+            "tag": "VMS_关注点3加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1021
+          },
+          {
+            "tag": "VMS_关注点4加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1022
+          },
+          {
+            "tag": "VMS_关注点5加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1023
+          },
+          {
+            "tag": "VMS_关注点6加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1024
+          },
+          {
+            "tag": "VMS_关注点7加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1025
+          },
+          {
+            "tag": "VMS_关注点8加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1026
+          },
+          {
+            "tag": "VMS_关注带1加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1027
+          },
+          {
+            "tag": "VMS_关注带2加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1028
+          },
+          {
+            "tag": "VMS_关注带3加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1029
+          },
+          {
+            "tag": "VMS_关注带4加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1030
+          },
+          {
+            "tag": "VMS_关注带5加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1031
+          },
+          {
+            "tag": "VMS_加速度谱最高能量点的阶次",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1032
+          },
+          {
+            "tag": "VMS_加速度谱总能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1033
+          },
+          {
+            "tag": "VMS_叶片特征值1X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1034
+          },
+          {
+            "tag": "VMS_叶片特征值2X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1035
+          },
+          {
+            "tag": "VMS_叶片特征值3X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1036
+          },
+          {
+            "tag": "VMS_叶片特征值4X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1037
+          },
+          {
+            "tag": "VMS_关注点1速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1038
+          },
+          {
+            "tag": "VMS_关注点2速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1039
+          },
+          {
+            "tag": "VMS_关注点3速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1040
+          },
+          {
+            "tag": "VMS_关注点4速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1041
+          },
+          {
+            "tag": "VMS_关注点5速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1042
+          },
+          {
+            "tag": "VMS_关注点6速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1043
+          },
+          {
+            "tag": "VMS_关注点7速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1044
+          },
+          {
+            "tag": "VMS_关注点8速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1045
+          },
+          {
+            "tag": "VMS_关注带1速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1046
+          },
+          {
+            "tag": "VMS_关注带2速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1047
+          },
+          {
+            "tag": "VMS_关注带3速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1048
+          },
+          {
+            "tag": "VMS_关注带4速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1049
+          },
+          {
+            "tag": "VMS_关注带5速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1050
+          },
+          {
+            "tag": "VMS_速度谱最高能量点的阶次",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1051
+          },
+          {
+            "tag": "VMS_速度谱总能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1052
+          },
+          {
+            "tag": "VMS_通道ID--2（Y轴）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1053
+          },
+          {
+            "tag": "VMS_测点转速（当前转速）（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1054
+          },
+          {
+            "tag": "VMS_内圈特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1055
+          },
+          {
+            "tag": "VMS_外圈特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1056
+          },
+          {
+            "tag": "VMS_滚动体特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1057
+          },
+          {
+            "tag": "VMS_保持架特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1058
+          },
+          {
+            "tag": "VMS_关注点1加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1059
+          },
+          {
+            "tag": "VMS_关注点2加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1060
+          },
+          {
+            "tag": "VMS_关注点3加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1061
+          },
+          {
+            "tag": "VMS_关注点4加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1062
+          },
+          {
+            "tag": "VMS_关注点5加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1063
+          },
+          {
+            "tag": "VMS_关注点6加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1064
+          },
+          {
+            "tag": "VMS_关注点7加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1065
+          },
+          {
+            "tag": "VMS_关注点8加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1066
+          },
+          {
+            "tag": "VMS_关注带1加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1067
+          },
+          {
+            "tag": "VMS_关注带2加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1068
+          },
+          {
+            "tag": "VMS_关注带3加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1069
+          },
+          {
+            "tag": "VMS_关注带4加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1070
+          },
+          {
+            "tag": "VMS_关注带5加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1071
+          },
+          {
+            "tag": "VMS_加速度谱最高能量点的阶次（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1072
+          },
+          {
+            "tag": "VMS_加速度谱总能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1073
+          },
+          {
+            "tag": "VMS_叶片特征值1X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1074
+          },
+          {
+            "tag": "VMS_叶片特征值2X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1075
+          },
+          {
+            "tag": "VMS_叶片特征值3X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1076
+          },
+          {
+            "tag": "VMS_叶片特征值4X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1077
+          },
+          {
+            "tag": "VMS_关注点1速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1078
+          },
+          {
+            "tag": "VMS_关注点2速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1079
+          },
+          {
+            "tag": "VMS_关注点3速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1080
+          },
+          {
+            "tag": "VMS_关注点4速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1081
+          },
+          {
+            "tag": "VMS_关注点5速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1082
+          },
+          {
+            "tag": "VMS_关注点6速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1083
+          },
+          {
+            "tag": "VMS_关注点7速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1084
+          },
+          {
+            "tag": "VMS_关注点8速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1085
+          },
+          {
+            "tag": "VMS_关注带1速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1086
+          },
+          {
+            "tag": "VMS_关注带2速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1087
+          },
+          {
+            "tag": "VMS_关注带3速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1088
+          },
+          {
+            "tag": "VMS_关注带4速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1089
+          },
+          {
+            "tag": "VMS_关注带5速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1090
+          },
+          {
+            "tag": "VMS_速度谱最高能量点的阶次",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1091
+          },
+          {
+            "tag": "VMS_速度谱总能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1092
+          },
+          {
+            "tag": "VMS_通道ID--3（Z轴）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1093
+          },
+          {
+            "tag": "VMS_测点转速（当前转速）（扩大100倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1094
+          },
+          {
+            "tag": "VMS_内圈特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1095
+          },
+          {
+            "tag": "VMS_外圈特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1096
+          },
+          {
+            "tag": "VMS_滚动体特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1097
+          },
+          {
+            "tag": "VMS_保持架特征值（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1098
+          },
+          {
+            "tag": "VMS_关注点1加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1099
+          },
+          {
+            "tag": "VMS_关注点2加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1100
+          },
+          {
+            "tag": "VMS_关注点3加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1101
+          },
+          {
+            "tag": "VMS_关注点4加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1102
+          },
+          {
+            "tag": "VMS_关注点5加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1103
+          },
+          {
+            "tag": "VMS_关注点6加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1104
+          },
+          {
+            "tag": "VMS_关注点7加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1105
+          },
+          {
+            "tag": "VMS_关注点8加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1106
+          },
+          {
+            "tag": "VMS_关注带1加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1107
+          },
+          {
+            "tag": "VMS_关注带2加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1108
+          },
+          {
+            "tag": "VMS_关注带3加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1109
+          },
+          {
+            "tag": "VMS_关注带4加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1110
+          },
+          {
+            "tag": "VMS_关注带5加速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1111
+          },
+          {
+            "tag": "VMS_加速度谱最高能量点的阶次",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1112
+          },
+          {
+            "tag": "VMS_加速度谱总能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1113
+          },
+          {
+            "tag": "VMS_叶片特征值1X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1114
+          },
+          {
+            "tag": "VMS_叶片特征值2X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1115
+          },
+          {
+            "tag": "VMS_叶片特征值3X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1116
+          },
+          {
+            "tag": "VMS_叶片特征值4X（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1117
+          },
+          {
+            "tag": "VMS_关注点1速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1118
+          },
+          {
+            "tag": "VMS_关注点2速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1119
+          },
+          {
+            "tag": "VMS_关注点3速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1120
+          },
+          {
+            "tag": "VMS_关注点4速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1121
+          },
+          {
+            "tag": "VMS_关注点5速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1122
+          },
+          {
+            "tag": "VMS_关注点6速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1123
+          },
+          {
+            "tag": "VMS_关注点7速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1124
+          },
+          {
+            "tag": "VMS_关注点8速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1125
+          },
+          {
+            "tag": "VMS_关注带1速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1126
+          },
+          {
+            "tag": "VMS_关注带2速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1127
+          },
+          {
+            "tag": "VMS_关注带3速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1128
+          },
+          {
+            "tag": "VMS_关注带4速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1129
+          },
+          {
+            "tag": "VMS_关注带5速度谱能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1130
+          },
+          {
+            "tag": "VMS_速度谱最高能量点的阶次",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1131
+          },
+          {
+            "tag": "VMS_速度谱总能量（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1132
+          },
+          {
+            "tag": "VMS_X轴诊断状态",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1133
+          },
+          {
+            "tag": "VMS_Y轴诊断状态",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1134
+          },
+          {
+            "tag": "VMS_Z轴诊断状态",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1135
+          },
+          {
+            "tag": "VMS_温度预警报警状态",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1136
+          },
+          {
+            "tag": "VMS_X轴预警报警状态",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1137
+          },
+          {
+            "tag": "VMS_Y轴预警报警状态",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1138
+          },
+          {
+            "tag": "VMS_Z轴预警报警状态",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1139
+          },
+          {
+            "tag": "VMS_BPFI（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1142
+          },
+          {
+            "tag": "VMS_BPFO（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1143
+          },
+          {
+            "tag": "VMS_BSF（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1144
+          },
+          {
+            "tag": "VMS_FTF（扩大10倍）",
+            "type": "16int",
+            "functionCode": 3,
+            "address": 1145
+          }
+        ],
+        "attributeUpdates": [
+          {
+            "tag": "VMS_转速测量值（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1158
+          },
+          {
+            "tag": "VMS_传动比（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1159
+          },
+          {
+            "tag": "VMS_关注点1转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1160
+          },
+          {
+            "tag": "VMS_关注点2转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1161
+          },
+          {
+            "tag": "VMS_关注点3转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1162
+          },
+          {
+            "tag": "VMS_关注点4转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1163
+          },
+          {
+            "tag": "VMS_关注点5转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1164
+          },
+          {
+            "tag": "VMS_关注点6转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1165
+          },
+          {
+            "tag": "VMS_关注点7转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1166
+          },
+          {
+            "tag": "VMS_关注点8转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1167
+          },
+          {
+            "tag": "VMS_关注带1起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1168
+          },
+          {
+            "tag": "VMS_关注带1结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1169
+          },
+          {
+            "tag": "VMS_关注带2起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1170
+          },
+          {
+            "tag": "VMS_关注带2结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1171
+          },
+          {
+            "tag": "VMS_关注带3起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1172
+          },
+          {
+            "tag": "VMS_关注带3结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1173
+          },
+          {
+            "tag": "VMS_关注带4起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1174
+          },
+          {
+            "tag": "VMS_关注带4结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1175
+          },
+          {
+            "tag": "VMS_关注带5起始点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1176
+          },
+          {
+            "tag": "VMS_关注带5结束点转频倍数（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1177
+          },
+          {
+            "tag": "VMS_滚动体个数",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1178
+          },
+          {
+            "tag": "VMS_滚动体直径（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1179
+          },
+          {
+            "tag": "VMS_轴承节径（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1180
+          },
+          {
+            "tag": "VMS_α接触角（扩大100倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1181
+          },
+          {
+            "tag": "VMS_叶片数/输入侧齿数",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1182
+          },
+          {
+            "tag": "VMS_诊断场景",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1183
+          },
+          {
+            "tag": "VMS_诊断类型",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1184
+          },
+          {
+            "tag": "VMS_X轴振动加速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1185
+          },
+          {
+            "tag": "VMS_X轴振动加速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1186
+          },
+          {
+            "tag": "VMS_Y轴振动加速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1187
+          },
+          {
+            "tag": "VMS_Y轴振动加速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1188
+          },
+          {
+            "tag": "VMS_Z轴振动加速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1189
+          },
+          {
+            "tag": "VMS_Z轴振动加速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1190
+          },
+          {
+            "tag": "VMS_X轴振动速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1191
+          },
+          {
+            "tag": "VMS_X轴振动速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1192
+          },
+          {
+            "tag": "VMS_Y轴振动速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1193
+          },
+          {
+            "tag": "VMS_Y轴振动速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1194
+          },
+          {
+            "tag": "VMS_Z轴振动速度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1195
+          },
+          {
+            "tag": "VMS_Z轴振动速度报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1196
+          },
+          {
+            "tag": "VMS_温度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1197
+          },
+          {
+            "tag": "VMS_温度预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1198
+          },
+          {
+            "tag": "VMS_X轴振动位移预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1199
+          },
+          {
+            "tag": "VMS_X轴振动位移报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1200
+          },
+          {
+            "tag": "VMS_Y轴振动位移预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1201
+          },
+          {
+            "tag": "VMS_Y轴振动位移报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1202
+          },
+          {
+            "tag": "VMS_Z轴振动位移预警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1203
+          },
+          {
+            "tag": "VMS_Z轴振动位移报警门限（扩大10倍）",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 1204
+          },
+          {
+            "tag": "VMS_比特率",
+            "type": "16int",
+            "functionCode": 6,
+            "objectsCount": 1,
+            "address": 2001
+          }
+        ]
+      }
+    ]
+  }
+}
