@@ -1,0 +1,10 @@
+[Unit]
+Description=Turn on and regularly feed the watchdog
+After=sysinit.target
+
+[Service]
+Type=oneshot
+ExecStart=/projects/linux-watchdog/linux-watchdog
+
+[Install]
+WantedBy=sysinit.target

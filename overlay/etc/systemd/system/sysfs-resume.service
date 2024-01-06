@@ -1,0 +1,10 @@
+[Unit]
+Description=Run sysfs-resume script at startup
+After=sysinit.target
+
+[Service]
+Type=oneshot
+ExecStart=/projects/hardware_resource_sync/sysfs-resume.sh /projects/hardware_resource_sync/shell-scripts
+
+[Install]
+WantedBy=sysinit.target

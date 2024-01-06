@@ -1,0 +1,12 @@
+[Unit]
+Description=Hardware Resource Sync
+After=network.target
+
+[Service]
+ExecStart=/projects/hardware_resource_sync/hardware_resource_sync
+Restart=always
+User=bit
+Group=bit
+
+[Install]
+WantedBy=multi-user.target
