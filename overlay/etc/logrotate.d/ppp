@@ -1,0 +1,9 @@
+/var/log/ppp-connect-errors {
+	size 5M
+	rotate 4
+	missingok
+	notifempty
+	compress
+	nocreate
+}
+
