@@ -133,6 +133,8 @@ sudo mkdir -p $TARGET_ROOTFS_DIR/packages/install_packages
 sudo cp -rpf packages/$ARCH/libmali/libmali-*$MALI*-x11*.deb $TARGET_ROOTFS_DIR/packages/install_packages
 sudo cp -rpf packages/$ARCH/${ISP:0:5}/camera_engine_$ISP*.deb $TARGET_ROOTFS_DIR/packages/install_packages
 
+sudo cp -rpf ../kernel/extboot/kerneldeb $TARGET_ROOTFS_DIR/boot/
+
 # overlay folder
 sudo cp -rpf overlay/* $TARGET_ROOTFS_DIR/
 
@@ -194,7 +196,7 @@ chmod +x /etc/rc.local
 export APT_INSTALL="apt-get install -fy --allow-downgrades"
 
 echo -e "\033[47;36m ---------- LubanCat -------- \033[0m"
-\${APT_INSTALL} fire-config u-boot-tools
+\${APT_INSTALL} fire-config u-boot-tools logrotate
 if [[ "$TARGET" == "gnome" || "$TARGET" == "gnome-full" ]]; then
     \${APT_INSTALL} gdisk fire-config-gui
     #Desktop background picture
@@ -209,6 +211,9 @@ elif [ "$TARGET" == "lite" ]; then
 fi
 
 apt install -fy --allow-downgrades /packages/install_packages/*.deb
+
+apt install -fy --allow-downgrades /boot/kerneldeb/* || true
+rm -rf /boot/*
 
 if [[ "$TARGET" == "gnome" ||  "$TARGET" == "xfce" || "$TARGET" == "gnome-full" || "$TARGET" == "xfce-full" ]]; then
     echo -e "\033[47;36m ----- power management ----- \033[0m"
@@ -303,6 +308,7 @@ fi
 echo -e "\033[47;36m ------- Custom Script ------- \033[0m"
 systemctl mask systemd-networkd-wait-online.service
 systemctl mask NetworkManager-wait-online.service
+systemctl disable hostapd
 rm /lib/systemd/system/wpa_supplicant@.service
 
 # 给自定义脚本写权限
