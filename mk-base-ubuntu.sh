@@ -188,8 +188,8 @@ apt-get -y update
 
 HOST=bitiot-gateway
 
-# Create User
-useradd -G sudo -m -s /bin/bash bit
+# Create User:bit
+useradd -m -s /bin/bash bit
 passwd bit <<IEOF
 temppwd
 temppwd
@@ -201,11 +201,21 @@ root
 root
 IEOF
 
+# Create User:op
+useradd -G sudo -m -s /bin/bash op
+passwd op <<IEOF
+temppwd
+temppwd
+IEOF
+
 # 将 bit 加入到 docker 用户组
 usermod -aG docker bit
 
 # allow root login
 # sed -i '/pam_securetty.so/s/^/# /g' /etc/pam.d/login
+
+# 只允许 op 用户通过 shell 登录
+echo "AllowUsers op" >> /etc/ssh/sshd_config
 
 # hostname
 echo bitiot-gateway > /etc/hostname
