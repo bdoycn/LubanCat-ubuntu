@@ -305,6 +305,32 @@ systemctl mask systemd-networkd-wait-online.service
 systemctl mask NetworkManager-wait-online.service
 rm /lib/systemd/system/wpa_supplicant@.service
 
+# 给自定义脚本写权限
+chmod -R 755 /home/*
+chmod -R 755 /root/*
+chmod -R 755 /projects
+
+# 将项目权限给到 bit 用户
+chown -R bit /projects/hardware-resource-sync/
+
+# 安装 categraf
+chmod 755 /projects/categraf/categraf
+/projects/categraf/categraf  --install
+
+# 定期清理 tmp 目录(十天内没访问的文件)
+(crontab -l 2>/dev/null; echo "# clean /tmp"; echo "0 2 * * * /bin/find /tmp -type f -atime +10 -delete") | crontab -
+
+# 每天两点重启一次 shellhub 容器
+(crontab -l 2>/dev/null; echo "# restart shellhub container"; echo "0 2 * * * /usr/bin/docker restart shellhub") | crontab -
+
+# 限制 systemd 的日志大小
+journalctl --vacuum-size=500M
+
+# 启动 systemd 服务
+systemctl enable sysfs-resume.service
+systemctl enable hardware-resource-sync
+systemctl enable watchdog
+
 echo -e "\033[47;36m  ---------- Clean ----------- \033[0m"
 if [ -e "/usr/lib/arm-linux-gnueabihf/dri" ] ;
 then
