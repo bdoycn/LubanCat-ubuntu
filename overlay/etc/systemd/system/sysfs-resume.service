@@ -4,7 +4,7 @@ After=sysinit.target
 
 [Service]
 Type=oneshot
-ExecStart=/projects/hardware_resource_sync/sysfs-resume.sh /projects/hardware_resource_sync/shell-scripts
+ExecStart=/projects/hardware-resource-sync/sysfs_resume.sh /projects/hardware-resource-sync/shell-scripts
 
 [Install]
 WantedBy=sysinit.target

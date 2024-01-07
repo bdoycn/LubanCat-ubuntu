@@ -3,7 +3,7 @@ Description=Hardware Resource Sync
 After=network.target
 
 [Service]
-ExecStart=/projects/hardware_resource_sync/hardware_resource_sync
+ExecStart=/projects/hardware-resource-sync/hardware_resource_sync
 Restart=always
 User=bit
 Group=bit
