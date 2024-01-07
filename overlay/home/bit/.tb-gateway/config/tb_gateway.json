@@ -19,7 +19,7 @@
     "handleDeviceRenaming": true,
     "security": {
       "type": "accessToken",
-      "accessToken": "BD0ndI45hHnjJeuxesuf"
+      "accessToken": "xfqa50d2xhwgj5wcv15z"
     },
     "qos": 1,
     "checkingDeviceActivity": {
@@ -30,8 +30,8 @@
   },
   "storage": {
     "type": "memory",
-    "read_records_count": 1000,
-    "max_records_count": 1000,
+    "read_records_count": 1,
+    "max_records_count": 1,
     "data_folder_path": "/thingsboard_gateway/data/",
     "max_file_count": 100,
     "max_read_records_count": 100,
