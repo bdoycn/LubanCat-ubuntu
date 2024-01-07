@@ -1,3 +1,8 @@
+# 加载 tb-gateway 镜像
+docker load -i /home/bit/images/local-gateway-3.4.4.tar
+# 删除镜像
+rm /home/bit/images/local-gateway-3.4.4.tar
+
 # 启动 tb-gateway 容器
 docker run -it \
     --device /dev/ttyS3:/dev/ttyS3 \
@@ -18,4 +23,4 @@ docker run -it \
     --add-host=host.docker.internal:host-gateway \
     --restart always \
     --name tb-gateway \
-    local-gateway-3.4.4
+    local-gateway:3.4.4

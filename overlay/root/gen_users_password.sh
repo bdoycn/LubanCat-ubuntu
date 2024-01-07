@@ -4,7 +4,7 @@
 for user in root op bit
 do
     # 生成16个字符的随机密码
-    password=$(< /dev/urandom tr -dc 'A-Za-z0-9!@#$%^&*_+' | head -c 16)
+    password=$(< /dev/urandom tr -dc 'A-Za-z0-9!@#%^&*_+' | head -c 16)
 
     # 更新用户密码
     echo "$user:$password" | sudo chpasswd
